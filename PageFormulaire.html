@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">	
+	<title> Page Formulaire </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheet.css"/>
+	<script language="javascript">
+		function demandeSoumise () {
+			alert ("Votre demande a bien été soumise.");
+		}
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<header class="row">
+			<div class="col-lg-12">
+				Achats de Sentiments
+					<p id="baseline"> Toute une gamme de sentiments à acquérir facilement <p>
+			</div>
+		</header>
+
+<! Centre de page >
+
+<! Menu>
+		<section class="row">
+			<nav class="col-lg-12 text-center" id="nav-horizontal">
+			<ul id="menu-horizontal"> 
+				<li><a href= "MaPageProduit.html">Page d'accueil</a></li> <! en attendant logo + hyperlink>
+				<li><a href= "PageCatalogue.html">Catalogue produits</a></li>
+				<li><a href= "MaPageProduit.html">Sentiment aléatoire</a></li> <! à 'aléatoiriser' lorsqu'il y aura plusieurs pages produits>
+				<li><a href= "#">Avis Clients</a>
+					<ul>
+						<li><a href="AvisClientsProduitGratitude.html"> Voir les avis clients</a></li>
+						<li><a href="AvisClients.html"> Déposer un avis</a></li>
+					</ul>
+				</li>
+				<li><a href= "#">Notre Equipe</a>
+					<ul>
+						<li><a href="NotreEditeur.html"> Editeur</a></li>
+						<li><a href="#"> Illustrateur</a></li>
+						<li><a href="#"> Développeur</a></li>
+					</ul>
+				</li>
+			</ul>
+			</nav>
+		</section> 
+
+
+<!Formulaire réalisé à l'aide du site Bootsnipp.com>
+
+		<h1> Formulaire ✒️</h1>
+<form class="form-horizontal" action="DonneesFormulaire.php" method="POST">
+	<fieldset tabindex="0">
+
+		<!-- Form Name -->
+		<legend>Participer à l'un de nos séminaires:</legend>
+		</br>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="prenom">Prénom</label>  
+		  <div class="col-md-12">
+		  <input id="prenom" name="setprenom" type="text" placeholder="Ada" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="nom">Nom</label>  
+		  <div class="col-md-12">
+		  <input id="nom" name="setnom" type="text" placeholder="Lovelace" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="email">Email</label>  
+		  <div class="col-md-12">
+		  <input id="email" name="setemail" type="text" placeholder="ada.lovelace@cbabbage.co.uk" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-12 control-label" for="telephone">Numéro de téléphone</label>  
+		  <div class="col-md-12">
+		  <input id="telephone" name="settelephone" type="text" placeholder="00 00 00 00 00" class="form-control input-md">
+		    
+		  </div>
+		</div>
+
+		<!-- Multiple Radios -->
+		<div class="form-group">
+		  <label class="col-md-12 control-label underline" for="radios" >Choix de la formation:</label>
+		  <div class="col-md-12">
+		  <div class="radio">
+		    <label for="radios-0">
+		      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+		      Ressentir la Gratitude 🌱
+		    </label>
+			</div>
+		  <div class="radio">
+		    <label for="radios-1">
+		      <input type="radio" name="radios" id="radios-1" value="2">
+		      Maitriser le Pardon 🐾
+		    </label>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Textarea -->
+		<div class="form-group">
+		  <label class="col-md-12 control-label" for="motivation">Pourquoi je souhaite participer:</label>
+		  <div class="col-md-12">                     
+		    <textarea class="form-control" id="motivation" name="setmotivation"></textarea>
+		  </div>
+		</div>
+
+		<!-- Button -->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="singlebutton"></label>
+		  <div class="col-md-12">
+		    <button id="singlebutton" name="singlebutton" class="btn btn-primary" onClick= "demandeSoumise()" onClick ="getPrenom()">Soumettre ma demande</button>
+		  </div>
+		</div>
+
+	</fieldset>
+</form>
+
+
+<!Pied de page>
+
+		<footer class="row"> 
+			Plus de détails &emsp; &emsp;      |̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡ ̴̡ı̴̴̡ ̡l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ |
+		</footer>
+
+	</div>
+</body>
+</html>

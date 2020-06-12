@@ -1,0 +1,281 @@
+html, body {
+ margin: 0;
+ padding: 0;
+ }
+
+
+body {
+	border:0;
+	text-align: center;
+	align-items: center;
+	background: #E0FFFF;
+	font-family: "Proxima Nova Light";
+	color: #004416;
+	font-size: 100%;
+}
+
+.container-fluid {
+width: 100%; margin:0;  padding: 0; 
+align-items: center; border: 0;
+}
+
+header {
+clear: both; height: 8%; background: #00bdaa	; color:#f1e7b6;
+font-family: Montserrat; font-size: 1.25em; 
+line-height: 2%; padding: 3%;  border:0;
+}
+
+#baseline {
+	text-align: right; 
+	font-size: 1em;
+	font-family: Montserrat;
+	font-style: italic;
+}
+
+/*Menu*/
+
+#menu-vertical {
+	border: 0.15em solid #00bdaa;
+	background: #f1e7b6;
+	color: #00bdaa ;
+	text-align: left;
+	padding: 4%;
+	line-height: 3;
+	font-size: 1.5em; 
+}
+
+#menu-vertical a {
+color: #00bdaa ;
+}
+
+#menu-horizontal { 
+display:flex;  flex-wrap: wrap;
+justify-content: space-between;
+background:#f1e7b6;
+list-style: none;
+padding: 1%; padding-right: 6%; padding-left: 6%; margin: 0;
+border:0;
+}
+
+#menu-horizontal a {
+    text-decoration:none;
+    color: #00bdaa;
+    font-size: 1.5em;    
+    line-height: 1.5;
+    white-space: nowrap; 
+}
+
+#menu-horizontal > li {
+color: black; 
+display:inline-block;
+position: relative;
+}
+
+#menu-horizontal li ul {
+    position: absolute; 
+    padding: 4%;
+    left:0;
+    max-height:0;
+    overflow:hidden;
+    z-index: 2;
+    font-size: 0.9em;
+}
+
+#menu-horizontal > li:hover ul{
+    max-height:15em; 
+    color: red ;
+    background-color: #f1e7b6;
+}
+
+/*Centre de page*/
+
+section {
+background:#AFEEEE	;
+padding: 0;
+}
+
+p {
+font-size:1em;
+}
+
+table {
+margin: auto;
+padding:2%;
+background: #FFFACD;
+}
+
+td, th {
+border: 0.1em solid #00bdaa;
+text-align: center;
+padding: 1%;
+}
+
+caption {
+font-style: italic;
+font-size: 1.25em;
+line-height: 0;
+text-align: left;
+color: #00bdaa;
+caption-side: top;
+}
+
+h1 {
+text-align: center; 
+padding: 1%;
+font-family: Montserrat;
+font-weight: 525; 
+margin:0; border:0;
+font-size: 2em;
+}
+
+h2 {
+	text-decoration: underline #00bdaa ;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+h3 {
+text-align: center; 
+padding: 1%;
+font-family: Montserrat;
+font-size: 1.25em;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.well{
+	background-color: #FFFACD;
+	padding: 3%;
+	vertical-align: middle;
+}
+
+.help-block {
+	font-size: 0.7em;
+	text-align: right;
+}
+
+.star {
+	color: #00bdaa;
+}
+
+.cata {
+  padding:2%;
+  background-color: #f1e7b6;
+  border-radius: 6%;
+  border: 0.15em solid #004416;
+  margin: 2%;
+  max-width: 33%;
+  height: auto;
+}
+
+.imageproduit{
+	padding:2%;
+	max-width: 40%;
+	border-radius: 6%;
+	border: 0.15em solid #00bdaa;
+	background-color: #FAFAFA;
+}
+
+.avisClients{
+	padding:1%;
+	max-width: 80%;
+	margin-left: 10%;
+	border: 0.05em solid #00bdaa;
+	text-align: left;	
+}
+
+#image {
+	align-items: center;
+	max-width: 20%;
+	height: auto;
+}
+
+.form-horizontal {
+	align-items: center;
+	background:#AFEEEE;
+	margin-right: 30% ;
+	margin-left: 30%;
+}
+
+#coeur {
+	padding: 2%;
+}
+
+.btn-primary {
+	background: #FFFACD;
+	border-color: #00bdaa;
+	color: #00bdaa;
+}
+
+#casePrix {
+	width: 12%;
+	background: #E0FFFF;
+	text-align: right;
+	border: 0.01em solid #00bdaa;
+	padding: 0.75%;
+	font-size: 0.85em;
+}
+
+#divBas {
+	border-style: none; 
+	background-color: #AFEEEE;
+	color : white;
+	visibility : visible;
+	vertical-align: center;
+}
+
+
+footer {
+	clear: both; height: 8%; margin-top: 1%; background:#00bdaa; color: #f1e7b6;
+	font-family: Montserrat; font-size: 2em; text-align: center;
+	line-height: 2%; padding: 4%; margin:0; border:0;
+}
+
+/* Taille de caractères responsive */
+
+
+@media (min-width: 801px) and (max-width: 1024px) {
+	header, footer {
+		font-size: 3em;
+	 }
+	nav {
+		font-size: 90%;
+	}
+	.imageproduit {
+	 	width:25%;
+	}
+}
+
+@media(min-width:481px) and (max-width: 800px) {
+	header, footer {
+		font-size: 1.5em;
+	 }
+	 nav {
+		font-size: 70%;
+		flex-flow: row wrap;
+	}
+	.imageproduit {
+	 	width:20%;
+	}
+	#baseline {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	header, footer {
+		font-size: 1em;
+ 	}
+ 	nav {
+		font-size: 50%;
+		flex-flow: row wrap;
+	}
+	.imageproduit {
+ 		width:15%;
+	}
+	#baseline {
+		display: none;
+	}
+} 
